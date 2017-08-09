@@ -1,3 +1,6 @@
+mkdir -p /usr/local/spark
+chown black:black /usr/local/spark
+
 mkdir -p /usr/local/hadoop
 chown black:black /usr/local/hadoop
 
