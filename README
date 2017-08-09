@@ -1,0 +1,14 @@
+Script to copy conf files of Spark and Hadoop to machines in a cluster
+
+/etc/hosts must be edited manually in each machine, I don't want to give the copy script root privileges for this
+
+This configuration assumes each slave of the Spark cluster is also a slave in the Hadoop cluster
+The script assumes spark and hadoop are installed under /usr/local/spark and /usr/local/hadoop respectively
+Masters are set in spark/ and hadoop/
+
+Configure ssh key authentication for fuck's sake
+
+Run the thing:
+$ bash conf.sh
+
+Take a look at hadoop-setup.sh to make direcotries, I like to run that as root in each machine.
